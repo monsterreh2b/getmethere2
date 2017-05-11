@@ -312,6 +312,7 @@ function getAllFareData(geoData) {
             console.log(fareInfo.lyft.data.cost_estimates[1].estimated_duration_seconds);
             $("#lyft").append("<br>" + "Lyft average cost: $" + dollar(fareInfo.lyft.data.cost_estimates[1].estimated_cost_cents_min)+ " dollars");
             $("#lyft").append("<br>" + "Lyft average duration: " + convert(fareInfo.lyft.data.cost_estimates[1].estimated_duration_seconds)+ " minutes");
+            initMap(geoData);
             return getUberTimeEstimate(geoData);
         })
         .then(function(resp) {
