@@ -1,0 +1,83 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>GetMeThere</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu6WMmCTIhkGq3mWvpevUjkiP2ZlSohx0">
+    </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default gmtnav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="assets/images/logo.png">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+
+
+<form>
+  <div class="form-group">
+    <label for="startAddress">Start Address</label>
+    <input type="input" class="form-control" id="startAddress" placeholder="Enter Starting Address"><button type="button" class="btn btn-default" id="doneStart">Done</button><button type="button" class="btn btn-default" id="useGeoStart">Use my current Address</button>
+  </div>
+  <div class="form-group">
+    <label for="endAddress">End Address</label>
+    <input type="input" class="form-control" id="endAddress" placeholder="Enter Ending Address"><button type="button" class="btn btn-default" id="doneEnd">Done</button><button type="button" class="btn btn-default" id="useGeoEnd">Use my current address</button>
+  </div>
+  <button type="submit" class="btn btn-default" id="submitAddress">Submit</button>
+</form>
+
+
+
+  </div>
+</div>
+<div class="row">
+	<div class ="col-md-12" id ="enterredStartAddress"></div>
+</div>	
+	<div class="row">
+	<div class ="col-md-12" id ="enterredEndAddress"></div>
+</div>	
+
+
+  <div class="col-md-4 lyft" id="lyft">Placeholder</div>
+  <div class="col-md-4 uber" id="uber">Placeholder</div>
+  <div class="col-md-4 google" id ="google">
+<div id="right-panel">
+      <div id="inputs">
+
+      </div>
+      <div>
+        <strong>Results</strong>
+      </div>
+      <div id="output"></div>
+    </div>
+    <div id="map"></div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+</body>
+
+
+
+</html>
