@@ -45,7 +45,7 @@ function addressToGeo(inputAddress) {
         console.log(inputAddress);
 
         var key = "AIzaSyAuk1rhKmWAY0bAmGK_4ygL6oApCSadGQg";
-        var queryURL = "http://maps.googleapis.com/maps/api/geocode/json?address=" + inputAddress + "&" + key;
+        var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + inputAddress + "&" + key;
 
         axios({
                 url: queryURL,
